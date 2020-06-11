@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#shield {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#fbi {
+    width: 40vmin;
+    object-fit: contain;
+    flex-grow: 1.1;
+}
+
+#calling {
+    color: white;
+    font-size: 6vmin;
+    margin-bottom: 6vmin;
+}
+
+#accept {
+    width: 12vmin;
+    object-fit: contain;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+.warning-img {
+    max-width: 12vmin;
+    object-fit: contain;
+}
+
+#warning-and-image {
+    display: flex;
+}
+
+#warning {
+    color:red;
+    font-size: 12vmin;
+    font-weight: bold;
+    margin: 0;
+    animation: 1s infinite blink;
+}
+
+#drill {
+    color: yellow;
+    font-size: 6vmin;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+    animation: 6s linear infinite slide;
+    white-space: nowrap;
+}
+
+#presentation {
+    width: 90vmin;
+}
+
+@keyframes
+blink {
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes
+slide {
+    0% {
+        right: 100vw;
+    }
+
+    100% {
+        right: -100vw;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is not a test</title>
+        <link href="./warn.png" type="image/png" rel="icon" />
+        <link href="./main.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="shield">
+            <img id="fbi" src="./fbi.png" />
+            <h1 id="calling">FBI is calling...</h1>
+            <img id="accept" onclick="startMayhem()" src="./accept.png" />
+        </div>
+        <div id="center">
+            <div id="warning-and-image">
+                <img class="warning-img" src="./warn.png" />
+                <h1 id="warning">WARNING!</h1>
+                <img class="warning-img" src="./warn.png" />
+            </div>
+            <h2 id="drill">This is not a drill. Please seek shelter immediately.</h2>
+            <video id="presentation" src="./notatest.mp4" loop></video>
+            <audio id="siren" src="./siren.mp3" loop></audio>
+        </div>
+        <script type="text/javascript">
+            console.log("I am women")
+            const v = document.getElementById("presentation");
+            const a = document.getElementById("siren");
+            const s = document.getElementById("shield");
+            var carnage = false;
+
+            function startMayhem() {
+                if(carnage) return;
+                carnage = true;
+
+                s.parentElement.removeChild(s);
+                v.play();
+                a.play();
+            }
+        </script>
+    </body>
+</html>
